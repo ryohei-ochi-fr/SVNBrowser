@@ -21,7 +21,7 @@ public class SVNBrowser {
         while (iterator.hasNext()) {
         	
         	// ファイル名
-        	// コミット時のタイムスタンプ　年月日と時刻に分かれる
+        	// コミット時のタイムスタンプ　年月日と時刻に分ける
         	// ファイルサイズ(バイト)
         	// リビジョン
         	
@@ -37,11 +37,9 @@ public class SVNBrowser {
     }
 
     public static void main(String[] args) {
-//        String url = "svn://localhost/repos/enecom/branches/HN_S20250601_03_NWKANRI_SCOPE2_ST/BATCH/src/main/java/jp/co/energia/nw/batch/NW1R";
-//        String name = "ryohei.ochi";
-//        String password = "zHjWGW6V";
+
         if (args.length != 3) {
-            System.out.println("usage: list4svn username password svn:url");
+            System.out.println("usage: SVNBrowser username password svn:url");
             System.exit(1);
         }
 
